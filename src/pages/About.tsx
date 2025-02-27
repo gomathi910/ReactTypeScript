@@ -1,28 +1,4 @@
-// import React from 'react'
-// import { useLocation } from 'react-router-dom'
 
-// function About() {
-//     React
-//     const location = useLocation();
-//     const { name, email, phone, employmentStatus } = location.state as {
-//         name: string;
-//         email: string;
-//         phone: string;
-//         employmentStatus: string;
-//       };
-//   return (
-//     <div>
-//             <h1>About Page</h1>
-//       <p>Name: {name}</p>
-//       <p>Email: {email}</p>
-//       <p>Phone Number: {phone}</p>
-//       <p>Employment Status: {employmentStatus}</p>
-
-//     </div>
-//   )
-// }
-
-// export default About
 
 
 import React from 'react'
