@@ -2,8 +2,11 @@
 
 
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -15,10 +18,16 @@ function Home() {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
       };
+
+      const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        navigate('/about', { state: { formData } }); // Pass data to About page
+      };
+    
   return (
     <div className='box'>
       
-      <form>
+      <form onSubmit={handleSubmit}>
         <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Name'/>
         
        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Email'/>

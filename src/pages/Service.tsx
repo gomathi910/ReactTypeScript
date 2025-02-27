@@ -8,11 +8,10 @@ interface Post {
     body: string;
   }
 function Service() {
-    React
     const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
-      axios.get(' https://jsonplaceholder.typicode.com/posts')
+      axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(response => {
           setPosts(response.data);
         })
