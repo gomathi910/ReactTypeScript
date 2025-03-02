@@ -3,12 +3,13 @@
 // import viteLogo from '/vite.svg'
 import React from 'react';
 import './App.css'
-import NavBar from './NavBar';
-import { BrowserRouter , Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Service from "./pages/Service";
+import TodoList from './TodoList';
 
+// import NavBar from './NavBar';
+// import { BrowserRouter , Route, Routes } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Service from "./pages/Service";
 
 
 
@@ -17,10 +18,9 @@ function App() {
   // const [count, setCount] = useState(0)
  
   return (
-  <div>
-    
-
-    <BrowserRouter>
+  <div className='App'>
+  <TodoList/>
+    {/* <BrowserRouter>
 
     <NavBar></NavBar>
 <Routes>
@@ -28,8 +28,7 @@ function App() {
   <Route path='/About' element = {<About/>}></Route>
   <Route path='/Service' element = {<Service/>}></Route>
 </Routes>
-</BrowserRouter>
-
+</BrowserRouter> */}
 
 
     </div>

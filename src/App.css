@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://files.123freevectors.com/wp-content/original/107842-colorful-bokeh-lights.jpg');
+width: 100%;
+}
+
+
+.App {
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color : red
+  }
+  
+  input {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    width: 250px;
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  
+  button {
+    padding: 20px;
+    margin: 5px;
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+background-color: aqua;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  li {
+    padding: 0px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  span {
+    cursor: pointer;
+  }
+  
